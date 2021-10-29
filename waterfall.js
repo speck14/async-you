@@ -29,7 +29,7 @@ const getResponseBody = function (data, cb) {
 async.waterfall([
     getURL,
     getResponseBody
-], function cb(err, result) {
+], (err, result) => {
   if(err) return console.error(error);
   return console.log(result)
 });
