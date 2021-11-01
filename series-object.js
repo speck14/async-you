@@ -39,7 +39,7 @@ async.series({
   requestOne: getBody.bind(null, firstURL),
   requestTwo: getBody.bind(null, secondURL)
 }, function (err, data) {
-  if(err) return console.err(err);
+  if(err) return console.error(err);
   return console.log(data);
 })
 
